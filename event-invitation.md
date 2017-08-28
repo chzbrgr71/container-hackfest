@@ -2,7 +2,7 @@
 
 Are you interested in some deep dive experience with containers, microservices, kubernetes, and the Azure cloud platform? This all day session will be delivered by some of our best Engineers from Microsoft and Cardinal to help our customers build and deliver cloud native applications in Azure. We will spend much of the day doing hands-on work in a Hackfest style workshop.
  
-Register here: 
+Register here:  
 Date:  
 Location: 
  
