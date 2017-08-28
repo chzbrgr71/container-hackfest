@@ -2,7 +2,7 @@
 
 Are you interested in some deep dive experience with containers, microservices, kubernetes, and the Azure cloud platform? This all day session will be delivered by some of our best Engineers from Microsoft and Cardinal to help our customers build and deliver cloud native applications in Azure. We will spend much of the day doing hands-on work in a Hackfest style workshop.
  
-Register here:
+Register here: 
 Date:  
 Location: 
  
@@ -24,6 +24,7 @@ The event will be targeted at cloud application architects. Though there will be
 * Organizations interested in solutions to help deploy, manage, monitor and scale cloud applications
 
 **Gives and Gets**
+
 Gets:
 * Work alongside Microsoft engineers and our strategic partners to help you design a plan to accelerate your cloud migration by modernizing an existing application.
 * Engage in architecture and coding sessions with Microsoft engineers to understand the options available for running containers in production and at scale with open source orchestrator solutions.
