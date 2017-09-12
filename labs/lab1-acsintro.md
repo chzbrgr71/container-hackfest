@@ -8,7 +8,11 @@ Azure Account with access to deploy at least 10 cores
 Azure CLI 2.0
 Azure Service Principal with at Least Contributor Rights
 
-
 ## Expected outcome
 
+When complete you should be able to access your Kubernetes Cluster through the kubectl CLI installed via the az cli.
+
 ## Advanced areas to explore
+
+1. If you have time, explore deploying a Kubernetes Cluster using the ACS-Engine Open Source project. 
+2. Deploy a cluster with advanced options such as custom Network Range, Azure CNI or Calico Network Policy. 
