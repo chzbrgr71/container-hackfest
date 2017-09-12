@@ -1,0 +1,41 @@
+# Azure Container Hackfest Challenge Guide 
+
+Below is a series of "challenges" or guided exercises to help attendees learn about Azure Containers and Kubernetes. These are not meant the be "hands-on labs" or step-by-step guides. The goal is to provide a series of exercises that have an expected outcome. Some steps and code will be provided. In the end, the hands-on experience should lead to a deeper level of learning. 
+
+## Pre-requisites
+
+* Azure subscription
+* Visual Studio Code
+* Bash
+* Docker
+* CLI utilities (kubectl, helm, etc.)
+
+## Challenges
+
+### Challenge #1: Installing Azure Container Serivce / ACS Engine
+
+### Challenge #2: Kubernetes Basics (Pods, Deployments, Services, Namespaces, Health Checks)
+
+### Challenge #3: Deploy app end-to-end (Docker->ACR->ACS)
+
+### Challenge #4: Service Discovery and Networking
+
+### Challenge #5: Ingress Controllers
+
+### Challenge #6: Persistent Storage
+
+### Challenge #7: Scaling 
+
+### Challenge #8: Helm Deployment
+
+### Challenge #9: CI/CD
+
+### Challenge #10: RBAC and Azure AD integration
+
+### Challenge #11: Monitoring & Logging
+
+### Challenge #12: Debugging
+
+### Challenge #13: Secrets and ConfigMaps
+
+### Challenge #14: Kubernetes Advanced (DaemonSets, StatefulSets, Jobs, InitContainers)
