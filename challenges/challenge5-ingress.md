@@ -1,10 +1,8 @@
 # Ingress Controllers
 
-In this lab...
-
 ## Expected outcome
 
-When complete you...
+In this lab...
 
 ## How to
 

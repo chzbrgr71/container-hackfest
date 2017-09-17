@@ -1,10 +1,8 @@
 # Kubernetes Basics (Pods, Deployments, Services, Namespaces, Health Checks)
 
-In this lab...
-
 ## Expected outcome
 
-When complete you...
+In this lab you will deploy some basic kubernetes resources for a sample application.
 
 ## How to
 
