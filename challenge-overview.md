@@ -11,8 +11,9 @@ Below is a series of "challenges" or guided exercises to help attendees learn ab
 * Bash
 * Docker
 * Additional CLI utilities (kubectl, helm, etc.)
+* Clone this repo. https://github.com/chzbrgr71/microsmack 
 
-## Challenges
+## Challenges:
 
 ### Challenge #1: Installing Azure Container Serivce / ACS Engine
 
