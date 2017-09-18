@@ -15,7 +15,7 @@ Below is a series of "challenges" or guided exercises to help attendees learn ab
 
 ## Challenges:
 
-### Challenge #1: Installing Azure Container Serivce / ACS Engine
+### Challenge #1: Installing Azure Container Service / ACS Engine
 
 ### Challenge #2: Kubernetes Basics (Pods, Deployments, Services, Namespaces, Health Checks)
 
