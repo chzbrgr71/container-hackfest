@@ -14,31 +14,32 @@ Below is a series of "challenges" or guided exercises to help attendees learn ab
 * Clone this repo. https://github.com/chzbrgr71/microsmack 
 
 ## Challenges:
-
+ 
 ### Challenge #1: Installing Azure Container Service / ACS Engine
-
+ 
 ### Challenge #2: Kubernetes Basics (Pods, Deployments, Services, Namespaces, Health Checks)
+ 
+### Challenge #3: Service Discovery and Networking
+ 
+### Challenge #4: Ingress Controllers
+ 
+### Challenge #5: Persistent Storage
+ 
+### Challenge #6: Scaling
+ 
+### Challenge #7: Secrets and ConfigMaps
+ 
+### Challenge #8: Deploy app end-to-end (Docker->ACR->ACS)
 
-### Challenge #3: Deploy app end-to-end (Docker->ACR->ACS)
-
-### Challenge #4: Service Discovery and Networking
-
-### Challenge #5: Ingress Controllers
-
-### Challenge #6: Persistent Storage
-
-### Challenge #7: Scaling 
-
-### Challenge #8: Helm Deployment
-
-### Challenge #9: CI/CD
-
-### Challenge #10: RBAC and Azure AD integration
-
-### Challenge #11: Monitoring & Logging
-
-### Challenge #12: Debugging
-
-### Challenge #13: Secrets and ConfigMaps
-
+### Challenge #9: Helm Deployment
+ 
+### Challenge #10: CI/CD
+ 
+### Challenge #12: RBAC and Azure AD integration
+ 
+### Challenge #12: Monitoring & Logging
+ 
+### Challenge #13: Debugging
+ 
 ### Challenge #14: Kubernetes Advanced (DaemonSets, StatefulSets, Jobs, InitContainers)
+ 
