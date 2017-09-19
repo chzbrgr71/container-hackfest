@@ -10,9 +10,11 @@ For this lab, we will use the sample applications in the Microsmack repo. https:
 
 1. Create or pull container images
 
-    Create the container images
-        - This will require Golang properly installed and $GOPATH configured
-        - Build args are utilized to provide environment variables
+    * Create the container images
+    
+        * This will require Golang properly installed and $GOPATH configured
+        * Build args are utilized to provide environment variables
+
         ```
         # API
         docker build --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` --build-arg VCS_REF=`git rev-parse --short HEAD` --build-arg VERSION=1.0 -t chzbrgr71/smackapi .
@@ -20,9 +22,11 @@ For this lab, we will use the sample applications in the Microsmack repo. https:
         # WEB
         docker build --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` --build-arg VCS_REF=`git rev-parse --short HEAD` --build-arg VERSION=1.0 -t chzbrgr71/smackweb .
         ```
+
     OR 
 
-    Pull the images
+    * Pull the images
+
         ```
         docker pull chzbrgr71/smackapi
         docker pull chzbrgr71/smackweb
