@@ -38,6 +38,10 @@ For this lab, we will use the sample applications in the Microsmack repo. https:
 
 3. Push the images from local image store to ACR
 
+    * Tag images
+    * Login to ACR
+    * Push
+
 4. Create deployment and service resources in Kubernetes
 
     * Create .yaml files for deployments and services
@@ -48,5 +52,14 @@ For this lab, we will use the sample applications in the Microsmack repo. https:
 
 6. Update application and re-deploy
 
+    * Use a different tag for new version
+    * Update variables or code to change application
+
 
 ## Advanced areas to explore
+
+1. Add health checks and validate issues
+
+2. Debug deployment issues
+
+3. Add NGINX and Ingress controller in front of web app
