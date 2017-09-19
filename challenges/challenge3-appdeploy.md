@@ -11,11 +11,14 @@ For this lab, we will use the sample applications in the Microsmack repo. https:
 1. Create or pull container images
 
     * Create the container images
-    
+
         * This will require Golang properly installed and $GOPATH configured
         * Build args are utilized to provide environment variables
+        * Dockerfiles for each container are in the subdirectories in the repo
 
         ```
+        # Be sure you are in the right directory:
+
         # API
         docker build --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` --build-arg VCS_REF=`git rev-parse --short HEAD` --build-arg VERSION=1.0 -t chzbrgr71/smackapi .
         
@@ -25,19 +28,25 @@ For this lab, we will use the sample applications in the Microsmack repo. https:
 
     OR 
 
-    * Pull the images
+    * Pull the images from Docker Hub
 
         ```
         docker pull chzbrgr71/smackapi
         docker pull chzbrgr71/smackweb
         ```
-2. 
+2. Create an Azure Container Registry
 
-3. 
+3. Push the images from local image store to ACR
 
+4. Create deployment and service resources in Kubernetes
+
+    * Create .yaml files for deployments and services
+    * For both smackapi and smackweb
+    * Ensure proper environment variables are supplied
+
+5. Test application, scale out replicas
+
+6. Update application and re-deploy
 
 
 ## Advanced areas to explore
-
-1. 
-2. 
