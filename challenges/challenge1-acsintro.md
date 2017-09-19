@@ -16,7 +16,7 @@ In this lab, you will create a new Azure Container Instance using the Azure CLI 
 
 3. Use the ``az acs kubernetes`` command to get your kube-config information for you cluster
 
-4. verify access to your cluster with the kubectl cli  
+4. Verify access to your cluster with the kubectl cli  
 
 ## Advanced areas to explore
 
