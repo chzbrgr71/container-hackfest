@@ -10,7 +10,6 @@ In this lab, you will create a new Azure Container Instance using the Azure CLI 
     * 1 Master Node using a Standard_D2v2 VM with managed disk with a master OS disk size of 50GB
     * 2 worker nodes using a Standard_d2v2 VM with managed disks with OS disk size of 120GB
     * Create the cluster in West Central US
-    * expose ports 80,443,8080,8443 for the agent pool
 
 2. Use the ``az acs kubernetes`` comand to install the kubectl cli (if you have not done so already)
 
