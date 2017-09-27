@@ -11,13 +11,13 @@ In this lab you will deploy some basic kubernetes resources for a sample applica
     * Uses the evillgenius\kuar:1 image
     * Exposes port 8080
 
-    Verify Pod is operational by using ``kubectl port-foward`` command to foward port 8080 on your local host to port 8080 on the pod and checking with you browser ``http://localhost:8080``
+    Verify Pod is operational by using ``kubectl port-forward`` command to forward port 8080 on your local host to port 8080 on the pod and checking with you browser ``http://localhost:8080``
 
 3. Create a Deployment manifest using the same parameters as above but add
     * make 3 replicas of the app
     * use a RollingUpdate strategy with no less than 1 pod avaialble and no more than 1 pod extra during updates
 
-    Verify deployment is operational by using ``kubectl port-foward`` command to foward port 8080 on your local host to port 8080 on any of the pods in the deployment and checking with you browser ``http://localhost:8080``
+    Verify deployment is operational by using ``kubectl port-forward`` command to forward port 8080 on your local host to port 8080 on any of the pods in the deployment and checking with you browser ``http://localhost:8080``
 
 4. Create a Service manifest that exposes the Deployment above using a LoadBalancer
     *  **NOTE** Getting an external IP may take some time initially. use ``kubectl get service -w`` until an external IP is shown. 
