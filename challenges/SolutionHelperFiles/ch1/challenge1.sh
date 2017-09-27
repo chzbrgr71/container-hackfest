@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Create a service principal:
+# az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/mySubscriptionID"
+
 RG_NAME='ejv-hackfest-rg'
 ACS_NAME='ejvk8satl'
 SSH_KEY_PATH='~/.ssh/id_rsa.pub'
