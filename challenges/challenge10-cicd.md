@@ -10,6 +10,7 @@ In this challenge, you will create a workflow for continuous integration and con
 2. Install Jenkins (using Helm)
 
     a. Review the "jenkins-values.yaml" file to be used for Helm deploy
+
     b. Install Jenkins
     ```
     helm --namespace jenkins --name jenkins -f ./jenkins-values.yaml install stable/jenkins
@@ -25,11 +26,13 @@ In this challenge, you will create a workflow for continuous integration and con
     echo http://$SERVICE_IP:8080/login
     ```
     e. Upgrade Jenkins to the latest version and update plug-ins
+
     f. Add your ACR credentials to Jenkins (ACR instance was created in a prior challenge)
-        - Credentials > Jenkins > Global credentials > Add Credentials
-        - Username with password
-        - ID = acr_creds
-        - Description = acr_creds
+
+        * Credentials > Jenkins > Global credentials > Add Credentials
+        * Username with password
+        * ID = acr_creds
+        * Description = acr_creds
 
 3. Deploy initial version of app (Microsmack web and api)
 
@@ -41,11 +44,11 @@ In this challenge, you will create a workflow for continuous integration and con
 
 4. Create a Jenkins pipeline with Build and Deploy stages (Sample in repo)
     
-    a. Create Jenkinsfile
-    b. Add code to configure variables and build parameters
-    c. Add a stage for Golang build and test
-    d. Add a stage to create Docker containers and push to ACR
-    e. Add a stage to update kube deployments with new image tag
+    * Create Jenkinsfile
+    * Add code to configure variables and build parameters
+    * Add a stage for Golang build and test
+    * Add a stage to create Docker containers and push to ACR
+    * Add a stage to update kube deployments with new image tag
 
 5. Deploy and test the pipeline in Jenkins
 6. Update code and ensure pipeline deploys new version of app
