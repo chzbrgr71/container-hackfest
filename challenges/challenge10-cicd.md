@@ -44,13 +44,20 @@ In this challenge, you will create a workflow for continuous integration and con
 
 4. Create a Jenkins pipeline with Build and Deploy stages (Sample in repo)
     
-    * Create Jenkinsfile
-    * Add code to configure variables and build parameters
-    * Add a stage for Golang build and test
-    * Add a stage to create Docker containers and push to ACR
-    * Add a stage to update kube deployments with new image tag
+    * Write a Jenkinsfile for your pipeline
+        
+        * Add a stage for Golang build and test
+        * Add a stage to create Docker containers and push to ACR
+        * Add a stage to update kube deployments with new image tag
+        * There is a sample Jenkinsfile in the repo
 
-5. Deploy and test the pipeline in Jenkins
+    * Open Jenkins Blue Ocean
+    * Create a new Pipeline
+    * Select Github and provide an access token
+    * Select your org and pick "New Pipeline" then pick your repo
+    * Wait for the pipeline to be created and check the results
+
+5. Test the pipeline in Jenkins with "Build Now"
 6. Update code and ensure pipeline deploys new version of app
 7. Setup webhook to fire pipeline on code change
 
