@@ -35,11 +35,11 @@ Below is a series of "challenges" or guided exercises to help attendees learn ab
  
 ### Challenge #10: CI/CD
  
-### Challenge #12: RBAC and Azure AD integration
+### Challenge #11: RBAC and Azure AD integration
  
 ### Challenge #12: Monitoring & Logging
  
-### Challenge #13: Debugging
+### Challenge #13: Troubleshooting & Debugging
  
 ### Challenge #14: Kubernetes Advanced (DaemonSets, StatefulSets, Jobs, InitContainers)
  

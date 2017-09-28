@@ -2,11 +2,10 @@
 
 | Time | Topic | Description |
 | ---- | ----- | ----------- |
-| 8:30-9:00 | Breakfast & Registration |  |
-| 9:00-9:30 | Introductory Topics | Value of containers, microservices, and cloud native applications|
-| 9:30-11:00 | Orchestrating containers on Azure | Deep dive on key container orchestration areas:<br>* Cluster deployment<br> * Scaling<br>* Networking<br>* CI/CD<br>* Storage<br>* Security/RBAC|
+| 8:30-9:00 | Get settled | Breakfast, registration, introductions |
+| 9:00-9:30 | Introductory Topics | Cloud native, containers, microservices |
+| 9:30-12:00 | Hands-on | Deep Dive Topics<br>+<br>Challenges<br>Part 1 |
 | 11:00-12:00 | Hands-on | Deploying and Managing Azure Container Service|
 | 12:00-12:30 | Lunch |  |
-| 12:30-2:00 | Kubernetes Advanced | * Kubernetes API model<br>* Persistent storage approaches<br>* Extending Monitoring to Cloud Scale with ELK stack, OMS, Prometheus<br>* Advanced topics (RBAC, AAD integration, Calico networking)<br>* CI/CD with Jenkins, Spinnaker, etc. |
-| 2:00-4:30 | Hands-on | Kubernetes in Azure – Deploying a real world application in Azure Kubernetes|
+| 12:30-4:30 | Hands-on | Deep Dive Topics<br>+<br>Challenges<br>Part 2 |
 | 4:30-5:00 | Next steps and closing |  |
