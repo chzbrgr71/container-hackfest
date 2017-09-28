@@ -8,7 +8,7 @@ In this lab we will use Secrets and ConfigMaps in Kubernetes to store applicatio
 
 1. Create a simple ConfigMap
 
-    * Use the SolutionHelperFiles in this repo (game.properties & ui.properties)
+    * Use the SolutionHelperFiles in this repo (redis-config)
     * Create a ConfigMap resource in your cluster
 
     ```
