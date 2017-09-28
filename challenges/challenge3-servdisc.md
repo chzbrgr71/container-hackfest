@@ -6,8 +6,8 @@ In this lab you should be able to identify how Pods communicate bewteen each oth
 
 ## How to
 
-1. Deploy the evillgenius/kuard:1 container with a single replica, expose port 8080. Expose the deployment so it has a public IP address. Give it a name of Service1
-2.  Deploy Deploy the evillgenius/kuard:1 container again with a single replica, expose port 8080. Expose the deployment so it has a public IP address. Give it a name of Service2
+1. Deploy the evillgenius/kuar:1 container with a single replica, expose port 8080. Expose the deployment so it has a public IP address. Give it a name of Service1
+2.  Deploy the evillgenius/kuar:1 container again with a single replica, expose port 8080. Expose the deployment so it has a public IP address. Give it a name of Service2
 3. Verify you can access the web page of each service via the public IP address deployed by Kubernetes. You can check with ```kubectl get svc -w``` until the External-IP filed populates for both services.
 4. On the DNS tab of Service 1 try to do a lookup of Service 2 via the service name only. 
 
