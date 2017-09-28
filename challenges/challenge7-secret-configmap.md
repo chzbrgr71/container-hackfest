@@ -22,7 +22,7 @@ In this lab we will use Secrets and ConfigMaps in Kubernetes to store applicatio
 2. Create a Redis Pod that utilizes the ConfigMap
 
     ```
-    kubectl create -f sample-app.yaml
+    kubectl create -f redis-pod.yaml
     ```
 
 3. Validate Redis
@@ -37,14 +37,40 @@ In this lab we will use Secrets and ConfigMaps in Kubernetes to store applicatio
     2) "allkeys-lru"
     ```
 
-4. Update the Microsmack sample app and replace environment variables with a ConfigMap
+4. Update the Microsmack sample web app and replace environment variables with a ConfigMap
 
 5. Create a Secret and use it to deploy a Postgres DB
 
-    * Base64 encode values for secret
-    * Create a secret.yaml file and deploy to cluster
-    * Deploy the modified Postgres container that utlizes the secret
+    * Base64 encode values for secret and add them to a secret.yaml file
+        
+        ```
+        echo -n "admin" | base64 | pbcopy
+        echo -n "Your@Password" | base64 | pbcopy
+        echo -n "secret_key" | base64 | pbcopy
+        ```
+
+    * Deploy the secret.yaml into kubernetes
+    * Deploy the modified Postgres container that utlizes the secret. Use the "chzbrgr71/postgres:secret" image
+    * Test connectivity
+
+    ```
+    $ kubectl exec db -it bash
+    root@db:/#
+    root@db:/# psql -U admin -W
+    Password for user admin:
+    psql (9.4.14)
+    Type "help" for help.
+
+    admin=#
+    CREATE SCHEMA test;
+    CREATE TABLE test.test (coltest varchar(20));
+    INSERT into test.test (coltest) values ('It works!');
+    SELECT * from test.test;
+
+    # Use "\q" to exit psql
+    ```
 
 ## Advanced areas to explore
 
-1. Use HashiCorp Vault to store/encrypt secrets
+1. Create a secret for an Azure Container Registry. Use "imagePullSecrets" to deploy Pod
+2. Use HashiCorp Vault to store/encrypt secrets

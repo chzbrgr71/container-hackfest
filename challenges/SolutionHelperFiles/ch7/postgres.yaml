@@ -8,7 +8,7 @@ spec:
   volumes:
   - name: secrets
     secret:
-      secretName: secrets
+      secretName: postgres-secret
   containers:
   - image: chzbrgr71/postgres:secret
     name: db
