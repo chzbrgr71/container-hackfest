@@ -6,7 +6,7 @@ In this lab we will create a RBAC enabled kubernetes cluster and configure it to
 
 ## How to
 
-1. Ensure access to Azure AD tenant
+1. Ensure access to Azure AD tenant (2 apps will be created)
 2. Build a cluster using acs-engine. Follow the steps in this article. https://github.com/Azure/acs-engine/blob/master/docs/kubernetes/aad.md 
 3. Create a ClusterRoleBinding for admin and read-only access
 
