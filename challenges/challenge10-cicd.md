@@ -65,5 +65,5 @@ In this challenge, you will create a workflow for continuous integration and con
 
 1. Build in steps to handle PR's and dev branches
 2. Add a step to security scan images
-3. Blue/green Deployment
+3. Blue/green Deployment. https://www.ianlewis.org/en/bluegreen-deployments-kubernetes 
 3. Spinnaker
