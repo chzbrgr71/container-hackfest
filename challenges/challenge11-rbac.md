@@ -34,8 +34,38 @@ You will follow the steps in this article. https://github.com/Azure/acs-engine/b
 
 4. Run acs-engine with above json to create ARM template
 5. Deploy ARM template into Azure (in _output directory)
-6. Create a ClusterRoleBinding for admin and read-only access
-7. Test RBAC with kubectl
+6. Connect to cluster via ssh and verify /etc/kubernetes/manifests/kube-apiserver.yaml
+7. Ensure kubectl is working
+8. Modify the kube config and add a user "user1" as follows:
+
+    ```
+    users:
+    - name: user1
+      user:
+        auth-provider:
+          config:
+            apiserver-id: {fill in}
+            client-id: {fill in}
+            environment: AzurePublicCloud
+            tenant-id: {fill in}
+          name: azure
+    ```
+
+8. Create a ClusterRoleBinding for read-only access for user1
+
+    * Use your AAD user name as described in the article. Eg: --user=https://sts.windows.net/e2917176-1632-47a0-ad18-671d485757a3/#22fa281b-bf62-4b14-972c-0dbca24a25a2 
+
+9. Test access to get or create pods
+
+    ```
+    kubectl get pod --user=user1
+    kubectl run busybox --image=busybox --user=user1
+    ```
+
+10. Delete the read-only binding
+11. Create a new ClusterRoleBinding for admin access for user1
+12. Re-test access
+
 
 ## Helpful links
 
