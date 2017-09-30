@@ -10,8 +10,10 @@ You will follow the steps in this article. https://github.com/Azure/acs-engine/b
 
 1. Using these instructions, create two app ID's in your Azure AD tenant https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration 
 
-    1. api-server
-    2. kubectl
+    1. api-server (Web app / API)
+    2. kubectl (Native)
+
+    -> Note that the Sign-on URL does not matter
 
 2. Setup acs-engine on your machine
 
@@ -30,8 +32,8 @@ You will follow the steps in this article. https://github.com/Azure/acs-engine/b
     },
     ```
 
-4. Run acs-engine with above json to create ARM template.
-5. Deploy ARM template into Azure
+4. Run acs-engine with above json to create ARM template
+5. Deploy ARM template into Azure (in _output directory)
 6. Create a ClusterRoleBinding for admin and read-only access
 7. Test RBAC with kubectl
 
