@@ -6,7 +6,7 @@ metadata:
   name: webapp-ingress
 spec:
   rules:
-    - host: www.evillgenius.com
+    - host: www.<ALB_EXT_IP_ADDRESS>.xip.io
       http:
         paths:
           - backend:

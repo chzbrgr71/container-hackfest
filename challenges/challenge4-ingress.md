@@ -13,7 +13,8 @@ In this lab you will use a Ingress Controller primitive in Kubernetes to route h
     * This file has a ReplicationController object which deploys a nginx ingress controller with a single replica, but this can be used to deploy an HA service as well.
     * Notice that we pass as an argument to the nginx the name of the default-backend service. This allows nginx to process all non-conforming URLs from the ingress rules to the default-backend service.
     * Deploy the ingress service to your cluster.
-3. Ingress Rules create the configuration for the ingress controller for specified services. The ingress rules use an annotation to tell kubernetes that it should be process by a specific ingress controller type:    
+3. Create a manifest to deploy 3 different webapp services listening on Port 80 using a NodePort with a port number higher than 30000. Use the image ``evillgenius/simplehttp:latest`` and name the services webapp1-svc, webapp2-svc and webapp3-svc.  
+4. Ingress Rules create the configuration for the ingress controller for specified services. The ingress rules use an annotation to tell kubernetes that it should be process by a specific ingress controller type:    
     ```yaml
     ...
       metadata:
@@ -21,9 +22,15 @@ In this lab you will use a Ingress Controller primitive in Kubernetes to route h
           kubernetes.io/ingress.class: nginx
       ...
       ```
-
+    * Open [ingress-rules.yaml](https://github.com/chzbrgr71/container-hackfest/blob/master/challenges/SolutionHelperFiles/ch4/ingress-rules.yaml) with VSCode.
+    * Edit the host section and enter the External IP address assigned to your nginx-ingress-svc. We will use xip.io so you do not have to register a domain. The format should be www.xxx.xxx.xxx.xxx.xip.io where the x's are the numbers of the IP address
+    * Verify that the paths point to the correctly named services you deployed in Step 3 of this challenge.
+    * Deploy the ingress rules to your cluster.
+5. Wait a few for the rules to publish and then using a browser navigate to www.xxx.xxx.xxx.xxx.xip.io and the service should return with webapp3 service the request as this was the service selected for the default path /.
+    * Test the other paths from the ingress rules file to verify that the ingress controller is properly doing path based routing.
+    *  Test to see if you put in a different path that the default backend appears.
 
 ## Advanced areas to explore
 
-1. 
-2. 
+1. Try deploying an HAProxy ingress controller.
+2. If you have your own domain name and can create a wildcard cert try creating a TLS secured site with nginx.
