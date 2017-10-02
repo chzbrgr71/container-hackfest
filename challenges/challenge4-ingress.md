@@ -14,11 +14,12 @@ In this lab you will use a Ingress Controller primitive in Kubernetes to route h
     * Notice that we pass as an argument to the nginx the name of the default-backend service. This allows nginx to process all non-conforming URLs from the ingress rules to the default-backend service.
     * Deploy the ingress service to your cluster.
 3. Ingress Rules create the configuration for the ingress controller for specified services. The ingress rules use an annotation to tell kubernetes that it should be process by a specific ingress controller type:    
-    ``...
+    ```...
       metadata:
         annotations:
           kubernetes.io/ingress.class: nginx
-      ...``
+      ...
+      ```
 
 
 ## Advanced areas to explore
