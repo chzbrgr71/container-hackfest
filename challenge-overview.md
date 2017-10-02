@@ -4,13 +4,21 @@ Below is a series of "challenges" or guided exercises to help attendees learn ab
 
 ## Pre-requisites
 
+For Mac OS users, use Homebrew where possible. 
+
 * Azure Account with access to deploy at least 10 cores
 * [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 * [Azure Service Principal with at Least Contributor Rights](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2Fazure%2Fazure-resource-manager%2Ftoc.json&view=azure-cli-latest#create-a-service-principal-for-your-application)
 * Visual Studio Code
-* Bash
+* Install and configure Golang https://golang.org/doc/install
+* Bash (Windows users will require "Windows Subsystem for Linux")
 * Docker
-* Additional CLI utilities (kubectl, helm, etc.)
+
+    * [Docker for Mac](https://docs.docker.com/docker-for-mac/install)
+    * [Docker for Windows](https://docs.docker.com/docker-for-windows/install)
+
+* [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl)
+* [helm](https://docs.helm.sh/using_helm)
 * Clone this repo. https://github.com/chzbrgr71/microsmack 
 
 ## Challenges:
