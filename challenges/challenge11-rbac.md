@@ -39,16 +39,11 @@ You will follow the steps in this article. https://github.com/Azure/acs-engine/b
 8. Modify the kube config and add a user "user1" as follows:
 
     ```
-    users:
-    - name: user1
-      user:
-        auth-provider:
-          config:
-            apiserver-id: {fill in}
-            client-id: {fill in}
-            environment: AzurePublicCloud
-            tenant-id: {fill in}
-          name: azure
+    kubectl config set-credentials "user1" --auth-provider=azure \
+    --auth-provider-arg=environment=AzurePublicCloud \
+    --auth-provider-arg=client-id={fill in}\
+    --auth-provider-arg=apiserver-id={fill in}\
+    --auth-provider-arg=tenant-id={fill in}
     ```
 
 8. Create a ClusterRoleBinding for read-only access for user1
