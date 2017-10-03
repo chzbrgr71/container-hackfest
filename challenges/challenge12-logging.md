@@ -2,11 +2,11 @@
 
 ## Expected outcome
 
-In this lab you will setup centralized logging for your ACS Kubernetes cluster.
+In this lab you will setup centralized logging and/or monitoring solutions for your ACS Kubernetes cluster.
 
 ## How to
 
-Use one of the below guides to aggregate logs from the cluster to a centralized service. 
+Follow one or more of the below guides.
 
 * Operations Management Suite (OMS). https://docs.microsoft.com/en-us/azure/container-service/kubernetes/container-service-kubernetes-oms
 
@@ -16,9 +16,9 @@ Use one of the below guides to aggregate logs from the cluster to a centralized 
 
 * CoScale. https://docs.microsoft.com/en-us/azure/container-service/kubernetes/container-service-kubernetes-coscale 
     
+* fluentd, elastic search, and kibana
+
 * Monioring with Prometheus and Grafana
 
-## Advanced areas to explore
+* Splunk
 
-1. Sidecar logging agent (eg - Splunk)
-2. Logging Using Elasticsearch and Kibana
