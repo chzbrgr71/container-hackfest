@@ -2,7 +2,7 @@
 
 ## Expected outcome
 
-In this lab, you will create a new Azure Container Instance using the Azure CLI to deploy a Kubernetes cluster.  You will deploy a small 1 Master, 2 node Cluster using Standard_D2v2 instances in a Region nearest your location.
+In this lab, you will create a new Azure Container Instance using the Azure CLI to deploy a Kubernetes cluster.  You will deploy a small 1 Master, 2 node Cluster using Standard_D2v2 instances in one of the following Regions: westcentralus, westus2.
 
 ## How to
 
