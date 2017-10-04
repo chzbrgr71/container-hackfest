@@ -44,18 +44,20 @@ In this challenge, you will create a workflow for continuous integration and con
 
 4. Create a Jenkins pipeline with Build and Deploy stages (Sample in repo)
     
-    * Write a Jenkinsfile for your pipeline
-        
+    * In order to do this you will need to create a copy of the Git Repo above into your own GitHub Account. This will be used as the Source Control for the Jenkins pipeline.
+    * You will then need to modify the Jenkinsfile in the cloned microsmack repo so the pipeline builds properly. Hint: Upate the Azure Container Registry credentials.
+    * The Jenkinsfile performs the following actions:        
         * Add a stage for Golang build and test
         * Add a stage to create Docker containers and push to ACR
         * Add a stage to update kube deployments with new image tag
         * There is a sample Jenkinsfile in the repo
-
-    * Open Jenkins Blue Ocean
-    * Create a new Pipeline
-    * Select Github and provide an access token
-    * Select your org and pick "New Pipeline" then pick your repo
-    * Wait for the pipeline to be created and check the results
+    * Once you have made the changes to the Jenkinsfile in your repo you are ready to setup the pipeline in Jenkins. 
+        * Login to Jenkins
+        * Open Jenkins Blue Ocean menu option on left-hand side
+        * Create a new Pipeline
+        * Select Github and provide an access token to the cloned Git Repo
+        * Select your org and pick "New Pipeline" then pick your repo
+        * Wait for the pipeline to be created and check the results
 
 5. Test the pipeline in Jenkins with "Build Now"
 6. Update code and ensure pipeline deploys new version of app
