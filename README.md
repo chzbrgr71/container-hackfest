@@ -4,4 +4,4 @@ This repo contains materials for the Azure Container Hackfest event series. This
 
 Locations:
 
-* Atlanta, October 11. https://www.eventbrite.com/e/modernizing-open-source-applications-with-containers-tickets-37069961252 
+* Atlanta, October 10. https://www.eventbrite.com/e/modernizing-open-source-applications-with-containers-tickets-37069961252 
