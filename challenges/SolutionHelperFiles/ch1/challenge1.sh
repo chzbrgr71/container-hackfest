@@ -3,16 +3,16 @@
 # Create a service principal if you haven't done so already:
 # az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/mySubscriptionID"
 
-RG_NAME='xxx-hackfest-rg'
-ACS_NAME='xxxk8satl'
+RG_NAME='k8s-1485' #Use the RG assigned to you at login of Sponsored Account
+ACS_NAME='ev2k8satl'
 SSH_KEY_PATH='~/.ssh/id_rsa.pub'
 MASTER_OS_DISK=50
 AGENT_OS_DISK=120
-SP_NAME='<CLIENT_ID_FROM_SP_OUTPUT>'
-SP_SECRET='<CLIENT_SECRET_FROM_SP_OUTPUT>'
-DNS_PREFIX='xxxatlk8s'
+SP_NAME='https://hol_user_1487cs21' # Use Service Prinicpal assigned in welcome email
+SP_SECRET='qrze83HLV!Ti' # Use Service Prinicpal client secret assigned in welcome email
+DNS_PREFIX='ev2atlk8s'
 VM_SIZE='Standard_D2_v2'
-ADMIN_NAME='xxx-atl'
+ADMIN_NAME='ev2-atl'
 
 
 az acs create --orchestrator-type Kubernetes -g $RG_NAME -n $ACS_NAME  \
