@@ -3,13 +3,13 @@
 # Create a service principal if you haven't done so already:
 # az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/mySubscriptionID"
 
-RG_NAME='ODL_k8s-1763-01' #Use the RG assigned to you at login of Sponsored Account
+RG_NAME='k8s-1495' #Use the RG assigned to you at login of Sponsored Account
 ACS_NAME='ev2k8satl'
 SSH_KEY_PATH='~/.ssh/id_rsa.pub'
 MASTER_OS_DISK=50
 AGENT_OS_DISK=120
-SP_NAME='https://odl_user_1763csc9' # Use Service Prinicpal assigned in welcome email
-SP_SECRET='jufw24KPB!yr' # Use Service Prinicpal client secret assigned in welcome email
+SP_NAME='e68e5654-c5f1-48f3-82a3-30f1aa6c6d80' # Use Service Prinicpal assigned in welcome email
+SP_SECRET='xbon34GGV*tT' # Use Service Prinicpal client secret assigned in welcome email
 DNS_PREFIX='ev2atlk8s'
 VM_SIZE='Standard_D2_v2'
 ADMIN_NAME='ev2-atl'
