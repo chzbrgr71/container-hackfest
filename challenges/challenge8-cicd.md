@@ -6,35 +6,46 @@ In this challenge, you will create a workflow for continuous integration and con
 
 ## How to
 
-1. Clone the repo https://github.com/chzbrgr71/microsmack 
-2. Install Jenkins (using Helm)
+### Github Repository
 
-    a. Review the "jenkins-values.yaml" file to be used for Helm deploy
+1. Fork this repo into your Github account. https://github.com/chzbrgr71/microsmack 
+2. Clone your forked copy to your local machine.
+3. Replace the contents of jenkins-values.yaml with the details from the file in the [helper folder.](SolutionHelperFiles/ch8/jenkins-values.yaml)
+4. In your terminal window, change to the directory where you have cloned the repo.
 
-    b. Install Jenkins
-    ```
-    helm --namespace jenkins --name jenkins -f ./jenkins-values.yaml install stable/jenkins
-    ```
-    c. When pod is running, get Jenkins initial password
-    ```
-    kubectl get secret --namespace jenkins jenkins-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode
-    ```
-    d. Get the external IP address of your Jenkins service and browse to the IP
-    ```
-    export SERVICE_IP=$(kubectl get svc jenkins-jenkins --namespace=jenkins -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+### Jenkins Setup (via Helm)
 
-    echo http://$SERVICE_IP:8080/login
-    ```
-    e. Upgrade Jenkins to the latest version and update plug-ins
+1. Review the "jenkins-values.yaml" from above
 
-    f. Add your ACR credentials to Jenkins (ACR instance was created in a prior challenge)
+2. Install Jenkins
+```
+helm --namespace jenkins --name jenkins -f ./jenkins-values.yaml install stable/jenkins
+```
 
-        * Credentials > Jenkins > Global credentials > Add Credentials
-        * Username with password
-        * ID = acr_creds
-        * Description = acr_creds
+3. When pod is running, get Jenkins initial password
+```
+kubectl get secret --namespace jenkins jenkins-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode
+```
 
-3. Deploy initial version of app (Microsmack web and api)
+4. Get the external IP address of your Jenkins service and browse to the IP
+```
+export SERVICE_IP=$(kubectl get svc jenkins-jenkins --namespace=jenkins -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+
+echo http://$SERVICE_IP:8080/login
+```
+
+5. Upgrade Jenkins to the latest version and update plug-ins
+
+6. Add your ACR credentials to Jenkins (ACR instance was created in a prior challenge)
+
+    * Credentials > Jenkins > Global credentials > Add Credentials
+    * Username with password
+    * ID = acr_creds
+    * Description = acr_creds
+
+### Setup Application
+
+1. Deploy initial version of app (Microsmack web and api)
 
     ```
     kubectl create -f kube-api.yaml
@@ -42,7 +53,9 @@ In this challenge, you will create a workflow for continuous integration and con
     kubectl create -f kube-web.yaml
     ```
 
-4. Create a Jenkins pipeline with Build and Deploy stages (Sample in repo)
+### Jenkins Pipeline Setup
+
+1. Create a Jenkins pipeline with Build and Deploy stages (Sample in repo)
     
     * In order to do this you will need to create a copy of the Git Repo above into your own GitHub Account. This will be used as the Source Control for the Jenkins pipeline.
     * You will then need to modify the Jenkinsfile in the cloned microsmack repo so the pipeline builds properly. Hint: Upate the Azure Container Registry credentials.
@@ -59,9 +72,11 @@ In this challenge, you will create a workflow for continuous integration and con
         * Select your org and pick "New Pipeline" then pick your repo
         * Wait for the pipeline to be created and check the results
 
-5. Test the pipeline in Jenkins with "Build Now"
-6. Update code and ensure pipeline deploys new version of app
-7. Setup webhook to fire pipeline on code change
+2. Test the pipeline in Jenkins with "Build Now"
+3. Update code and ensure pipeline deploys new version of app
+4. Setup webhook to fire pipeline on code change
+
+
 
 ## Advanced areas to explore
 
