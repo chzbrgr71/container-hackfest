@@ -3,7 +3,7 @@
 | Time | Topic | Challenges |
 | ---- | ----- | ----------- |
 | 8:30-9:00 | Get settled | Breakfast, registration, introductions |
-| 9:00-10:15 | Introductory Topics:<br>Cloud native<br>Containers<br>Microservices<br>Intro to ACS | Challenge #1: Installing Azure Container Service / ACS Engine |
+| 9:00-10:15 | Introductory Topics: Cloud native, containers, microservices, and introduction to ACS | Challenge #1: Installing Azure Container Service / ACS Engine |
 | 10:15-11:15 | Kubernetes Concepts | Challenge #2: Kubernetes Basics<br>Challenge #3: Deploy app end-to-end |
 | 11:15-12:15 | ACS Kubernetes Networking | Challenge #4: Service Discovery and Networking<br>Challenge #5: Ingress Controllers |
 | 12:15 | Working Lunch | |
