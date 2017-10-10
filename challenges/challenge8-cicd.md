@@ -57,13 +57,13 @@ echo http://$SERVICE_IP:8080/login
 
 1. Create a Jenkins pipeline with Build and Deploy stages (Sample in repo)
     
-    * In order to do this you will need to create a copy of the Git Repo above into your own GitHub Account. This will be used as the Source Control for the Jenkins pipeline.
-    * You will then need to modify the Jenkinsfile in the cloned microsmack repo so the pipeline builds properly. Hint: Upate the Azure Container Registry credentials.
+    * Use the microsmack repo that you have forked into your Github account from above.
+    * You will then need to modify the Jenkinsfile so the pipeline builds properly. Hint: Upate the Azure Container Registry credentials.
     * The Jenkinsfile performs the following actions:        
         * Add a stage for Golang build and test
         * Add a stage to create Docker containers and push to ACR
         * Add a stage to update kube deployments with new image tag
-        * There is a sample Jenkinsfile in the repo
+        * Again, there is a sample Jenkinsfile in the repo
     * Once you have made the changes to the Jenkinsfile in your repo you are ready to setup the pipeline in Jenkins. 
         * Login to Jenkins
         * Open Jenkins Blue Ocean menu option on left-hand side
@@ -75,6 +75,8 @@ echo http://$SERVICE_IP:8080/login
 2. Test the pipeline in Jenkins with "Build Now"
 3. Update code and ensure pipeline deploys new version of app
 4. Setup webhook to fire pipeline on code change
+
+> Note: It is possible to use a Kubernetes plug-in for Jenkins. At the time of this writing the plug-in had some bugs but has since been released. https://plugins.jenkins.io/kubernetes-cd 
 
 
 
