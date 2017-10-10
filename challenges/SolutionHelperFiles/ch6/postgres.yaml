@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    name: db
+  name: db
+spec:
+  volumes:
+  - name: secrets
+    secret:
+      secretName: postgres-secret
+  containers:
+  - image: chzbrgr71/postgres:secret
+    name: db
+    volumeMounts:
+    - name: secrets
+      mountPath: "/etc/secrets"
+      readOnly: true
+    ports:
+    - name: cp
+      containerPort: 5432
+      hostPort: 5432

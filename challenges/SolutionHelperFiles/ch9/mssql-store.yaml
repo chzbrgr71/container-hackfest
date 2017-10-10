@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mssql-svc
+  labels:
+    app: mssql-store
+spec:
+  ports:
+  - protocol: TCP
+    port: 1433
+    targetPort: 1433
+  type: LoadBalancer
+  selector:
+    app: mssql-store
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: mssql-deploy
+  labels:
+    app: mssql-store
+spec:
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: mssql-store
+    spec:
+      containers:
+      - image: microsoft/mssql-server-linux:2017-latest
+        name: mssql-store
+        ports:
+        - containerPort: 1433
+          name: sql
+        env:
+        - name: ACCEPT_EULA
+          value: "Y"
+        - name: MSSQL_SA_PASSWORD
+          value: "My_Complex_Pass1" #At least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols
+        - name: MSSQL_PID
+          value: "Developer"
+
+        volumeMounts:
+        - name: mssql-persistent-storage
+          mountPath: /var/opt/mssql
+      volumes:
+      - name: mssql-persistent-storage
+        persistentVolumeClaim:
+          claimName: mssql-pv-claim
