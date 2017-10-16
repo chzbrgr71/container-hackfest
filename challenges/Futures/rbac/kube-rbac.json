@@ -1,0 +1,43 @@
+{
+  "apiVersion": "vlabs",
+  "properties": {
+    "orchestratorProfile": {
+      "orchestratorType": "Kubernetes",
+      "orchestratorVersion": "1.7.5",
+      "kubernetesConfig": {
+        "enableRbac": true
+      }
+    },
+    "aadProfile": {
+      "serverAppID": "",
+      "clientAppID": ""
+    },
+    "masterProfile": {
+      "count": 1,
+      "dnsPrefix": "unique-dns-prefix",
+      "vmSize": "Standard_D2_v2"
+    },
+    "agentPoolProfiles": [
+      {
+        "name": "agentpool1",
+        "count": 3,
+        "vmSize": "Standard_D2_v2",
+        "availabilityProfile": "AvailabilitySet"
+      }
+    ],
+    "linuxProfile": {
+      "adminUsername": "azureuser",
+      "ssh": {
+        "publicKeys": [
+          {
+            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1IPznosnb4MNFjsNP1mwzKb0xWdR+fNre2I162aymHDogCkHNtqofrcZyBIxhoPYWPLGmnvkHxk+9mcLP/MZegBgGwuSnsDBHqNH40D9l2nnTDUPy2XLGo5QhggTqJCXfjAli9ce5ifXLQFaxdhRVLzkaPilQ9SR04koBSRSrb5jWEBekf3UAZPmBg+RYZZLtAOakWN2AigZDJdSddbfaNA8T3jvybx6k10RrC280Y3wVX/NapedTs/LqzE2rXFKQpmbof3+67KYwflRSFUY9IG8oqs1YbBpR9MhTJb7bnyQs1cjt/Emjs/1zx1G9pJMkzqCPbPlIM2wyW77LNnoB"
+          }
+        ]
+      }
+    },
+    "servicePrincipalProfile": {
+      "clientId": "",
+      "secret": ""
+    }
+  }
+}

@@ -2,13 +2,14 @@
 
 ## Expected outcome
 
-In this lab, you will create a new Azure Container Instance using the Azure CLI to deploy a Kubernetes cluster.  You will deploy a small 1 Master, 2 node Cluster using Standard_D2v2 instances in a Region nearest your location.
+In this lab, you will create a new Azure Container Instance using the Azure CLI to deploy a Kubernetes cluster.  You will deploy a small 1 Master, 2 node Cluster using Standard_D2v2 instances in one of the following Regions: westcentralus, westus2.
 
 ## How to
 
 1. Use the ``az acs create`` command to create a cluster with the following parameters
-    * 1 Master Node using a Standard_D2v2 VM with managed disk with a master OS disk size of 50GB
-    * 2 worker nodes using a Standard_d2v2 VM with managed disks with OS disk size of 120GB
+    * Orchestrator type Kubernetes
+    * 1 Master Node using a Standard_D2_v2 VM with managed disk with a master OS disk size of 50GB
+    * 2 worker nodes using a Standard_D2_v2 VM with managed disks with OS disk size of 120GB
     * Create the cluster in West Central US
 
 2. Use the ``az acs kubernetes`` comand to install the kubectl cli (if you have not done so already)

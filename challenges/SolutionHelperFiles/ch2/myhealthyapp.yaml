@@ -1,7 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-ns
+---
 kind: Service
 apiVersion: v1
 metadata:
   name: my-healthysvc
+  namespace: my-ns
 spec:
   selector:
     app: my-app
@@ -15,6 +21,7 @@ kind: Deployment
 apiVersion: apps/v1beta1 # for versions before 1.6.0 use extensions/v1beta1
 metadata:
   name: my-healthydeploy
+  namespace: my-ns
   labels:
     zone: prod
     version: v1

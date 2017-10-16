@@ -27,27 +27,25 @@ For Mac OS users, use Homebrew where possible.
  
 ### Challenge #2: Kubernetes Basics (Pods, Deployments, Services, Namespaces, Health Checks)
  
-### Challenge #3: Service Discovery and Networking
- 
-### Challenge #4: Ingress Controllers
- 
-### Challenge #5: Persistent Storage
- 
-### Challenge #6: Scaling
- 
-### Challenge #7: Secrets and ConfigMaps
- 
-### Challenge #8: Deploy app end-to-end (Docker->ACR->ACS)
+### Challenge #3: Deploy app end-to-end (Docker->ACR->ACS)
 
-### Challenge #9: Helm Deployment
+### Challenge #4: Service Discovery and Networking
  
-### Challenge #10: CI/CD
+### Challenge #5: Ingress Controllers
+
+### Challenge #6: Secrets and ConfigMaps
  
-### Challenge #11: RBAC and Azure AD integration
+### Challenge #7: Helm Deployment
  
-### Challenge #12: Monitoring & Logging
+### Challenge #8: CI/CD
+
+### Challenge #9: Persistent Storage
  
-### Challenge #13: Troubleshooting & Debugging
+### Challenge #10: Scaling
  
-### Challenge #14: Kubernetes Advanced (DaemonSets, StatefulSets, Jobs, InitContainers)
+### Challenge #11: Monitoring & Logging
+ 
+### Challenge #12: Troubleshooting & Debugging
+ 
+### Challenge #13: Kubernetes Advanced (DaemonSets, StatefulSets, Jobs, InitContainers)
  
