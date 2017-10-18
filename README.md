@@ -5,7 +5,6 @@ This repo contains materials for the Azure Container Hackfest event series. This
 Planned Locations:
 
 * Atlanta, October 10
-* St. Louis, October 24
 * Chicago, Nov 1
 * Minneapolis, Nov 1
 * Boston, Nov 2
@@ -22,3 +21,4 @@ Planned Locations:
 * Columbus
 * Washington, DC
 * Tampa
+* St. Louis
