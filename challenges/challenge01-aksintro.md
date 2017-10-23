@@ -1,8 +1,8 @@
-# Intro to Azure Kontainer Service
+# Intro to Azure K(c)ontainer Service
 
 ## Expected outcome
 
-In this lab, you will create a new Azure Kontainer Instance using the Azure CLI to deploy a Managed Kubernetes cluster.  You will deploy a 2 node Cluster using Standard_D2v2 instances in one of the following Region: westus2.
+In this lab, you will create a new Azure K(c)ontainer Instance using the Azure CLI to deploy a Managed Kubernetes cluster.  You will deploy a 2 node Cluster using Standard_D2v2 instances in one of the following Region: westus2.
 
 ## How to
 
@@ -23,4 +23,4 @@ In this lab, you will create a new Azure Kontainer Instance using the Azure CLI 
 ## Advanced areas to explore
 
 1. If you have time, explore deploying a Kubernetes Cluster using the [ACS-Engine Open Source](https://github.com/Azure/acs-engine) project. 
-2. Deploy a cluster with advanced options such as custom Network Range, Azure CNI or Calico Network Policy. 
+ 
