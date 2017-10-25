@@ -2,9 +2,11 @@
 
 Below is a series of "challenges" or guided exercises to help attendees learn about Azure Containers and Kubernetes. These are not meant the be "hands-on labs" or step-by-step guides. The goal is to provide a series of exercises that have an expected outcome. Some steps and code will be provided. In the end, the hands-on experience should lead to a deeper level of learning. 
 
-## Pre-requisites
+## Environment Setup
 
-For Mac OS users, use Homebrew where possible. 
+For our Hackfest events, attendees will be provided a VM student environment hosted in Azure. For those setting up their machines manually, the prerequisites are below. 
+
+-> Note: This has only been tested on Mac OS.
 
 * Azure Account with access to deploy at least 10 cores
 * [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
@@ -19,7 +21,6 @@ For Mac OS users, use Homebrew where possible.
 
 * [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl)
 * [helm](https://docs.helm.sh/using_helm)
-* Clone this repo. https://github.com/chzbrgr71/microsmack 
 
 ## Challenges:
  
