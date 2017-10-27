@@ -27,12 +27,12 @@ In this lab you will deploy some basic kubernetes resources for a sample applica
 6. Add a Liveness and Readiness probe to your deployment.
     * The kuar app has an http /healthy path listening on port 8080 for Liveness
     * The kuar app has an http /ready path listening on port 8080 for Readiness
-    * configure the differnet timeouts on each to determine cause and effect.
+    * configure the different timeouts on each to determine cause and effect.
     * On the kuar app page, go to the Liveness and Readiness probe tabs to test failures and ensure probe is being received 
 
 
 ## Advanced areas to explore
 
 1. Deploy a Pod that has multiple containers in a single Pod.
-2. Change the image version of your deployment and casue a RollingUpdate.
+2. Change the image version of your deployment and cause a RollingUpdate.
 3. Rollback an update
