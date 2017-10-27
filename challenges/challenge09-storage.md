@@ -8,7 +8,7 @@ In this lab you will use Kubernetes Persistent Storage constructs to mount a per
 
 1. Create a Storage Class
     * Let's create a storage class. Please use storage.k8s.io/v1beta1. You can see the spec in [here](https://github.com/kubernetes/kubernetes/blob/master/docs/api-reference/storage.k8s.io/v1beta1/definitions.html)
-    * if you created the cluster with managed disks you muts use ``Managed`` as the StorageClass kind 
+    * If you created the cluster with managed disks you must use ``managed`` as the StorageClass kind. If your Agents are using Storage Accounts for DataDisks then you must use ``shared`` as the StorageClass kind.
 2. Create the Persistent Volume Claim
     * You need to add the annotation to the Persistent Volume Claim definition. You need to specify ``storageClassName`` on specification.
 3. Deploy the ``microsoft/mssql-server-linux`` container with the volume ``/var/opt/mssql`` mounted from the PersistentVolumeClaim you created. 
