@@ -6,7 +6,7 @@ In this lab, you will prepare your workstation VM for working with ACS and Kuber
 
 ## How to
 
-1. Using your browser go to the [Lab Signup](https://experienceazure.cloud/#/odl/Linux-Jump-Box-Testing) Site.
+1. Using your browser go to the Registration Site listed in your classroom.
     * Please make sure you use a valid work email as it will not allow for commercial e-mail domains.
         * ![SignUp](./images/signup.png)
     * Once you select submit, **DO NOT CLOSE THE BROWSER**.
