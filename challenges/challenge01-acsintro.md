@@ -46,6 +46,10 @@ In this lab, you will prepare your workstation VM for working with ACS and Kuber
     * ``kubectl get nodes``
         *  ![kubectl get nodes](./images/k8sgetnodes.png)
 
+8. In your terminal git clone the repo for this Hackfest
+    * ``git clone https://github.com/chzbrgr71/container-hackfest.git``
+    * cd into the ``/container-hackfest/challenges`` directory 
+
 ## Advanced areas to explore
 
 1. If you have time, explore deploying a Kubernetes Cluster using the [ACS-Engine Open Source](https://github.com/Azure/acs-engine) project. 
