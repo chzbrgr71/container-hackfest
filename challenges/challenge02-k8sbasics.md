@@ -8,7 +8,7 @@ In this lab you will deploy some basic kubernetes resources for a sample applica
 
 1. Create a Pod manifest file that has the following parameters
     * Uses 2 Labels zone = prod and version = v1
-    * Uses the evillgenius\kuar:1 image
+    * Uses the evillgenius/kuar:1 image
     * Exposes port 8080
 
     Verify Pod is operational by using ``kubectl port-forward`` command to forward port 8080 on your local host to port 8080 on the pod and checking with you browser ``http://localhost:8080``
