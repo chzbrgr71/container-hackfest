@@ -7,9 +7,9 @@ In this lab you will use a Ingress Controller primitive in Kubernetes to route h
 ## How to
 
 1. First we will deploy a default backend service that will serve up a 404 on the / of the URL if it is not an expected path based on the ingress rules.
-    * Open the [default.yaml](https://github.com/chzbrgr71/container-hackfest/blob/master/challenges/SolutionHelperFiles/ch4/default.yaml) file with VSCode.
+    * Open the [default.yaml](https://github.com/chzbrgr71/container-hackfest/blob/master/challenges/SolutionHelperFiles/ch5/default.yaml) file with VSCode.
     *   Deploy the service to your cluster in the default namespace.
-2. Inspect the Ingress manifest file [ingress.yaml](https://github.com/chzbrgr71/container-hackfest/blob/master/challenges/SolutionHelperFiles/ch4/ingress.yaml) with VSCode.
+2. Inspect the Ingress manifest file [ingress.yaml](https://github.com/chzbrgr71/container-hackfest/blob/master/challenges/SolutionHelperFiles/ch5/ingress.yaml) with VSCode.
     * This file has a ReplicationController object which deploys a nginx ingress controller with a single replica, but this can be used to deploy an HA service as well.
     * Notice that we pass as an argument to the nginx the name of the default-backend service. This allows nginx to process all non-conforming URLs from the ingress rules to the default-backend service.
     * Deploy the ingress service to your cluster.
@@ -22,7 +22,7 @@ In this lab you will use a Ingress Controller primitive in Kubernetes to route h
           kubernetes.io/ingress.class: nginx
       ...
       ```
-    * Open [ingress-rules.yaml](https://github.com/chzbrgr71/container-hackfest/blob/master/challenges/SolutionHelperFiles/ch4/ingress-rules.yaml) with VSCode.
+    * Open [ingress-rules.yaml](https://github.com/chzbrgr71/container-hackfest/blob/master/challenges/SolutionHelperFiles/ch5/ingress-rules.yaml) with VSCode.
     * Edit the host section and enter the External IP address assigned to your nginx-ingress-svc. We will use xip.io so you do not have to register a domain. The format should be www.xxx.xxx.xxx.xxx.xip.io where the x's are the numbers of the IP address
     * Verify that the paths point to the correctly named services you deployed in Step 3 of this challenge.
     * Deploy the ingress rules to your cluster.
