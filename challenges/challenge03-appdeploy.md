@@ -2,7 +2,7 @@
 
 ## Expected outcome
 
-In this lab you will build a simple set of apps using Docker. You will create an instance of Azure Container Registry and push images to the registry. Then you will deploy these apps to ACS Kubernetes. 
+In this lab you will build a simple set of apps using Docker. You will create an instance of Azure Container Registry and push images to the registry. Then you will deploy these apps to AKS Managed Kubernetes. 
 
 For this lab, we will use the sample applications in the Microsmack repo. https://github.com/chzbrgr71/microsmack 
 
