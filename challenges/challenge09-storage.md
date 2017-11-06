@@ -35,10 +35,10 @@ In this lab you will use Kubernetes Persistent Storage constructs to mount a per
         * ``GO``
     * Exit the ``sqlcmd`` tool
         * ``QUIT``
-    * Exit your shell session by typeing ``exit``
+    * Exit your shell session by typing ``exit``
 5. Determine the node the msqql pod is running on and drain the node. You may have to use ``--ignore-DaemonSet`` parameter to properly drain the node.
 6. Verify that the new pod can access the data written by the old pod.
-    * Use ``kubcetl get all`` to determine when the pod is fisnished recreating. Once the new pod is in a running state on a new node, connect to the database and query the Inventroy table again to verify the data persisted.
+    * Use ``kubcetl get all`` to determine when the pod is finished recreating. Once the new pod is in a running state on a new node, connect to the database and query the Inventory table again to verify the data persisted.
 
 ## Advanced areas to explore
 
